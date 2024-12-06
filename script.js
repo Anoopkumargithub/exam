@@ -67,6 +67,10 @@ function displayMeals(meals) {
                         <strong>Ingredients:</strong>
                         <small>Ingredients: ${meal.ingredients.join(", ")}</small>
                     </div>
+                    <div class="instructions">
+                        <strong>Instructions:</strong>
+                        <small>${meal.instructions}</small>
+                    </div>
                 </div>
             `,
     )
@@ -80,7 +84,7 @@ function orderMeal(mealId) {
   }
 }
 
-// Initial setup
+
 document.querySelector(".product-grid").innerHTML = `
     <div class="loading">Search for your favorite recipes...</div>
 `;
